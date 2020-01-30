@@ -11,6 +11,10 @@ const routes: Routes = [
     loadChildren: () => import('./tab4/tab4.module').then( m => m.Tab4PageModule)
   },
   {
+    path: 'login',
+    loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
+  },
+  {
     path: 'tab5',
     loadChildren: () => import('./tab5/tab5.module').then( m => m.Tab5PageModule)
   },
@@ -19,7 +23,7 @@ const routes: Routes = [
     loadChildren: () => import('./message/message.module').then( m => m.MessagePageModule)
   },
   {
-    path: 'login',
+    path: '',
     loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
   }
 ];

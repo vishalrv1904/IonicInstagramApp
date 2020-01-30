@@ -1,9 +1,71 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>Vishal</ion-title>
+    <ion-buttons slot="end">
+      <ion-tab-button  tab="message">
+        <ion-icon name="menu"></ion-icon>
+      </ion-tab-button>
+    </ion-buttons>
+    
   </ion-toolbar>
 </ion-header>
 <ion-content>
+  <div class="user">
+    <div class="userdetails">
+      <div class="image" style="position: relative;">
+        <img src="http://source.unsplash.com/collection/9263445">
+      </div>
+    </div>
+    <div class="followers">
+      <div class="follow">
+        9 <br> Post
+      </div>
+      <div class="follow">
+        2.2M <br> Followers
+      </div>
+      <div  class="follow">
+        1 <br> Following
+      </div>
+    </div>
+  </div>
+  <div class="details">
+    <p>Vishal Periysamy R
+    <br>
+     Do Something Great Every Day</p>
+  </div>
+  <div class="edit">
+  <button >Edit Profile</button>
+</div>
+
+<div class="stories">
+  <div class="story">
+    <div class="add">
+  <ion-tab-button tab="tab3">
+    <ion-icon name="add-circle"></ion-icon>
+  </ion-tab-button>
+  </div>
+  <p>Add</p>
+  </div>
+  <div class="story" *ngFor="let data of newsfeed">
+    <div class="image">
+      <img src={{data.img}}>
+      <p>{{data.name}}</p>
+    </div>
+  </div>
+</div>
+<div class="or"></div>
+<div class="tools">
   
+<div><ion-icon name="grid" class="menu"></ion-icon></div>
+  <div><ion-icon name="contacts"  class="menu"></ion-icon></div>      
+     
+        
+      </div>
+<div class="or"></div>
+<div class="container">
+  <div class="news-feed" *ngFor="let data of newsfeed" >
+    <img  src={{data.img}}>
+    </div>
+ </div>
 
 </ion-content>
