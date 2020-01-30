@@ -1,9 +1,10 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>
-      Tab Two
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-searchbar showCancelButton="focus"></ion-searchbar>
+<ion-content>
+  <div class="container">
+    <div class="news-feed" *ngFor="let data of newsfeed" >
+      <img  src={{data.img}}>
+      </div>
+   </div>
+</ion-content>
 
-<ion-content></ion-content>
+
