@@ -7,8 +7,9 @@ import { CameraService } from '../camera.service';
   styleUrls: ['tab3.page.scss']
 })
 export class Tab3Page {
-
-  constructor(public photoService: CameraService) { }
-
+  currentImage: any;
+  constructor(public photoService: CameraService) {  }
+  ngOnInit() {
+    this.photoService.loadSaved();
+  }
 }
-
