@@ -66,6 +66,9 @@
   <div class="news-feed" *ngFor="let data of newsfeed" >
     <img  src={{data.img}}>
     </div>
+    <div class="news-feed" *ngFor="let photo of photoService?.photos" >
+        <img [src]="photo.data" />
+        </div>
  </div>
 
 </ion-content>

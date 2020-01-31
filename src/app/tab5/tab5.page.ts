@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CameraService } from '../camera.service';
 
 @Component({
   selector: 'app-tab5',
@@ -30,7 +31,7 @@ export class Tab5Page implements OnInit {
     }
   ];
   
-  constructor() { }
+  constructor(public photoService: CameraService) { }
 
   ngOnInit() {
   }
